@@ -6,9 +6,9 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="iest">Estado</label>
+            <label for="iest">Estado:</label>
             <select name="est" id="iest">
 
                 <optgroup label="Região Sudeste">
@@ -27,9 +27,22 @@
         </p>
             
         <p>
-
-        </p>        
-
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof" placeholder="Sua Profissão:">
+            <datalist id="lstprof">
+                    <option>Administrador</option>
+                    <option>Contabilista</option>
+                    <option>Desenvolvedor</option>
+                    <option>Professor</option>
+                </optgroup>
+            </datalist>
+        </p>     
+        
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Deixe Uma Mensagem..."></textarea>
+        </p>
+            
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
