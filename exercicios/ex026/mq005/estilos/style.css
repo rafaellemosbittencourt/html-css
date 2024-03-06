@@ -44,10 +44,10 @@ menu a{
     padding: 5px;
     background-color: #82888f;
     text-align: center;
-    border-top: 2px solid #B4BDC6;
+    border-top: 1px solid #454850c9;
 }
 menu > ul > li > a:hover{
-    background-color: #5a5d63;
+    background-color: black;
 }
 main{
     width: 90vw;
